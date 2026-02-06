@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Zorgt dat de layout goed schaalt op mobiele schermen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Portfolio</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Eigen CSS (extern bestand) -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Navigatiebalk: blijft op elke pagina hetzelfde voor consistentie -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">Dmytro Savychev</a>
+
+        <!-- Hamburger-knop voor mobiele schermen -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Menu openen/sluiten">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-grow-1">
+      <!-- Hero sectie: korte pitch + call-to-actions -->
+      <section class="hero py-5">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <p class="text-uppercase text-muted small mb-2">Junior Java Developer - Spring Boot</p>
+              <h1 class="display-5 fw-bold mb-3">Bouwt nette backend-apps met focus op kwaliteit</h1>
+              <p class="lead text-secondary mb-4">
+                Ik werk graag aan REST API's, JPA/Hibernate en clean architecture.
+                Op deze site vind je mijn projecten, skills en hoe je me kan bereiken.
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary btn-lg" href="projects.html">View projects</a>
+                <a class="btn btn-outline-dark btn-lg" href="resume.html">View resume</a>
+              </div>
+
+              <!-- Kleine badges voor snelle scan -->
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <span class="badge text-bg-light border">Java</span>
+                <span class="badge text-bg-light border">Spring Boot</span>
+                <span class="badge text-bg-light border">JPA/Hibernate</span>
+                <span class="badge text-bg-light border">MySQL</span>
+                <span class="badge text-bg-light border">REST</span>
+                <span class="badge text-bg-light border">Git</span>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <!-- Simpele "avatar" zonder externe afbeeldingen -->
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <div class="avatar-circle mx-auto mb-3" aria-hidden="true"></div>
+                  <h2 class="h4 text-center mb-1">Dmytro Savychev</h2>
+                  <p class="text-center text-muted mb-3">Enterprise Java Ontwikkelaar</p>
+
+                  <ul class="list-unstyled mb-0">
+                    <li class="d-flex justify-content-between py-1"><span class="text-muted">Location</span><span>Belgium</span></li>
+                    <li class="d-flex justify-content-between py-1"><span class="text-muted">Focus</span><span>Backend</span></li>
+                    <li class="d-flex justify-content-between py-1"><span class="text-muted">Stack</span><span>Java, Spring</span></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="small text-muted mt-2 mb-0">
+                Tip: vervang teksten door jouw echte info wanneer je klaar bent.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Korte sectie "What I do" -->
+      <section class="py-5 bg-light border-top border-bottom">
+        <div class="container">
+          <h2 class="h3 fw-semibold mb-4">What I do</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="p-4 bg-white border rounded-3 h-100">
+                <h3 class="h5">Backend development</h3>
+                <p class="text-secondary mb-0">
+                  REST endpoints, DTO mapping, validation, security basics en nette lagen (controller/service/repo).
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-4 bg-white border rounded-3 h-100">
+                <h3 class="h5">Databases</h3>
+                <p class="text-secondary mb-0">
+                  Data modelling, relaties (OneToMany, ManyToMany), JPA queries en migrations (basis).
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-4 bg-white border rounded-3 h-100">
+                <h3 class="h5">Tooling</h3>
+                <p class="text-secondary mb-0">
+                  Git/GitHub, Maven, Postman, unit tests (basis) en troubleshooting.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Snelle CTA -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-center g-3">
+            <div class="col-md-8">
+              <h2 class="h3 fw-semibold mb-1">Open voor junior opportunities</h2>
+              <p class="text-secondary mb-0">
+                Stuur me een bericht via de contactpagina of kijk naar mijn GitHub repositories.
+              </p>
+            </div>
+            <div class="col-md-4 text-md-end">
+              <a class="btn btn-dark" href="contact.html">Contact me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!-- Footer met snelle links en sociale profielen -->
+    <footer class="py-4 border-top bg-light mt-auto">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <div class="text-muted small">
+          © <span id="year"></span> Dmytro Savychev - Portfolio
+        </div>
+
+        <!-- Vervang de # links door jouw echte profielen -->
+        <div class="d-flex gap-3">
+          <a class="link-secondary text-decoration-none" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="link-secondary text-decoration-none" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="link-secondary text-decoration-none" href="#" target="_blank" rel="noreferrer">Other</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Eigen JS (extern bestand) -->
+    <script src="assets/js/main.js" defer></script>
+
+  </body>
+</html>

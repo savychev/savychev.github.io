@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Zorgt dat de layout goed schaalt op mobiele schermen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume - Portfolio</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Eigen CSS (extern bestand) -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Navigatiebalk: blijft op elke pagina hetzelfde voor consistentie -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">Dmytro Savychev</a>
+
+        <!-- Hamburger-knop voor mobiele schermen -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Menu openen/sluiten">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-grow-1">
+      <section class="py-5">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row align-items-start justify-content-between gap-3">
+            <div>
+              <h1 class="fw-bold mb-1">Resume</h1>
+              <p class="text-secondary mb-0">
+                Vervang placeholders door jouw echte opleiding/ervaring.
+              </p>
+            </div>
+
+            <!-- Knop kan later linken naar een PDF van je CV -->
+            <a class="btn btn-outline-dark" href="#" aria-disabled="true">Download CV (later)</a>
+          </div>
+
+          <div class="row g-4 mt-3">
+            <div class="col-lg-8">
+              <div class="p-4 border rounded-3 bg-white">
+                <h2 class="h4 fw-semibold">Experience</h2>
+
+                <!-- 1e item -->
+                <div class="resume-item">
+                  <div class="d-flex justify-content-between flex-wrap gap-2">
+                    <div>
+                      <h3 class="h6 fw-semibold mb-1">Personal projects - Java/Spring</h3>
+                      <div class="text-muted small">2024 - present</div>
+                    </div>
+                    <div class="text-muted small">Belgium (remote)</div>
+                  </div>
+                  <ul class="text-secondary mb-0">
+                    <li>REST API's gebouwd met Spring Boot, layered architecture</li>
+                    <li>Entity/DTO mapping, validation en foutafhandeling</li>
+                    <li>Database relaties met JPA/Hibernate</li>
+                  </ul>
+                </div>
+
+                <hr>
+
+                <!-- 2e item -->
+                <div class="resume-item">
+                  <div class="d-flex justify-content-between flex-wrap gap-2">
+                    <div>
+                      <h3 class="h6 fw-semibold mb-1">Andere ervaring (placeholder)</h3>
+                      <div class="text-muted small">2022 - 2024</div>
+                    </div>
+                    <div class="text-muted small">Location</div>
+                  </div>
+                  <ul class="text-secondary mb-0">
+                    <li>Beschrijf hier wat je deed en wat het resultaat was</li>
+                    <li>Gebruik actie-woorden en meetbare impact</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="p-4 border rounded-3 bg-white mt-4">
+                <h2 class="h4 fw-semibold">Education</h2>
+                <ul class="text-secondary mb-0">
+                  <li>Enterprise Java Ontwikkelaar - Intec Brussels (placeholder)</li>
+                  <li>Andere opleiding/certificaten (placeholder)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="p-4 border rounded-3 bg-light">
+                <h2 class="h5 fw-semibold">Tech stack</h2>
+                <ul class="mb-0">
+                  <li>Java</li>
+                  <li>Spring Boot</li>
+                  <li>Spring Data JPA</li>
+                  <li>Hibernate</li>
+                  <li>MySQL</li>
+                  <li>Maven</li>
+                  <li>Git/GitHub</li>
+                </ul>
+
+                <hr class="my-4">
+
+                <h3 class="h6 text-uppercase text-muted">Languages</h3>
+                <ul class="mb-0">
+                  <li>Ukrainian/Russian (native)</li>
+                  <li>English (learning)</li>
+                  <li>Dutch (learning)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!-- Footer met snelle links en sociale profielen -->
+    <footer class="py-4 border-top bg-light mt-auto">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <div class="text-muted small">
+          © <span id="year"></span> Dmytro Savychev - Portfolio
+        </div>
+
+        <!-- Vervang de # links door jouw echte profielen -->
+        <div class="d-flex gap-3">
+          <a class="link-secondary text-decoration-none" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="link-secondary text-decoration-none" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="link-secondary text-decoration-none" href="#" target="_blank" rel="noreferrer">Other</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Eigen JS (extern bestand) -->
+    <script src="assets/js/main.js" defer></script>
+
+  </body>
+</html>
